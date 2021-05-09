@@ -1,7 +1,7 @@
 
 import 'package:flutter/material.dart';
 
-import 'package:sampleproj/screens/home/home_screen.dart';
+import 'package:sampleproj/screens/signin/signin_screen.dart';
 
 
 
@@ -22,7 +22,7 @@ class _SplashScreenState extends State<SplashScreen> {
         context,
         MaterialPageRoute(
           builder: (context){
-            return HomeScreen();
+            return SigninScreen();
           },
         ),
         (route) => false,
@@ -61,7 +61,7 @@ class _SplashScreenState extends State<SplashScreen> {
                       Padding(padding: EdgeInsets.only(top: 10.0),
                       ),
                       Text(
-                        "Sri Varis",style: TextStyle(
+                        "Sri Vari",style: TextStyle(
                                       color: Colors.white,
                                       fontSize: 24.0,
                                       fontWeight: FontWeight.bold),
