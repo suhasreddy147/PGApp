@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:sampleproj/screens/login/login_screen.dart';
+import 'package:sampleproj/screens/signup/signup_screen.dart';
 
 class LoginandSignup extends StatelessWidget {
   const LoginandSignup({
@@ -21,15 +22,21 @@ class LoginandSignup extends StatelessWidget {
               ),
             color: Colors.blue,
             onPressed: () {
-              Navigator.push(context,MaterialPageRoute(builder: (context){},));
+              Navigator.push(context,MaterialPageRoute(
+                builder: (context){
+                  return SignUpScreen();
+                },
+                ),
+                );
             },
             child: Container(
               padding: const EdgeInsets.symmetric(vertical: 16),
               alignment: Alignment.center,
               width: double.infinity,
-              child: Text('Sign up',
+              child: Text("Sign up",
               style: TextStyle(
                 color: Colors.white,
+
               ),
               ),
             ),
