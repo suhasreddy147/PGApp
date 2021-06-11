@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:sampleproj/screens/login/widget/login_button.dart';
 import 'package:sampleproj/screens/login/widget/login_form.dart';
 import 'package:sampleproj/screens/login/widget/welcome_back.dart';
+import 'package:sampleproj/screens/reset_password/reset_screen.dart';
 
 class LoginScreen extends StatelessWidget {
   @override
@@ -19,12 +20,29 @@ class LoginScreen extends StatelessWidget {
           Container(
             padding: const EdgeInsets.symmetric(horizontal: 30),
             alignment: Alignment.centerRight,
-            child: Text(
-              'Forgot password?',
-              style: TextStyle(
-                color: Colors.white),
-              ),
-            ),
+            child: RichText(
+                text: TextSpan(
+                  style: TextStyle(
+                    color: Colors.white
+                  ),
+                  children: [
+                    TextSpan(
+                      text: 'Forgot Password?',
+                      style: TextStyle(
+                        color: Colors.white,
+                    ),
+                    recognizer: TapGestureRecognizer()..onTap = () {
+                      Navigator.push(context,
+                      MaterialPageRoute(builder: (context) {
+                  return ResetPassword();
+                      },
+                    ),
+                      );
+                    },
+                ),
+                  ],
+                ),),
+          ),
             SizedBox(height: 60,),
             LoginButton(),
             Container(
@@ -83,6 +101,3 @@ class LoginScreen extends StatelessWidget {
     );
   }
 }
-
-
-

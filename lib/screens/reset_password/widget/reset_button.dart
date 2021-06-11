@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class SignUpButton extends StatelessWidget {
-  const SignUpButton({
+class ResetButton extends StatelessWidget {
+  const ResetButton({
     Key key,
   }) : super(key: key);
 
@@ -20,10 +20,10 @@ class SignUpButton extends StatelessWidget {
           padding: const EdgeInsets.symmetric(vertical: 16),
           alignment: Alignment.center,
           child: Text(
-            'Sign up',
+            'Reset Password',
             style: TextStyle(
               color: Colors.blue,
-              ), //HAVE TO ADD ONPRESS FUNCTION TO STORE DATA AND CHECK IF USER ALREADY EXISTS
+              ), //HAVE TO ADD ONPRESS FUNCTION TO CHANGE PASSWORD -FIREBASE LINKING
           ),
         ),
       ),
