@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "831773352639",
+    "project_id": "pgapp-cd93c",
+    "storage_bucket": "pgapp-cd93c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:831773352639:android:6f325558b10ec0b16f9c0a",
+        "android_client_info": {
+          "package_name": "com.example.pgapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "831773352639-lq0e4ted04110ltvdjdg7ok0vnekh5v9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXVv238dMUM388LBKzq9lv6Pa2Do-Psvo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "831773352639-lq0e4ted04110ltvdjdg7ok0vnekh5v9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

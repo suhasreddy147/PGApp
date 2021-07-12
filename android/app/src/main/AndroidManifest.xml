@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.sampleproj">
+    package="com.example.pgapp">
    <application
-        android:label="sampleproj"
+        android:label="pgapp"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"

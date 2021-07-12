@@ -1,8 +1,8 @@
 
 import 'package:flutter/material.dart';
-import 'package:sampleproj/screens/reset_password/widget/reset.dart';
-import 'package:sampleproj/screens/reset_password/widget/reset_button.dart';
-import 'package:sampleproj/screens/reset_password/widget/reset_form.dart';
+import 'package:pgapp/screens/reset_password/widget/reset.dart';
+import 'package:pgapp/screens/reset_password/widget/reset_button.dart';
+import 'package:pgapp/screens/reset_password/widget/reset_form.dart';
 
 class ResetPassword extends StatelessWidget {
   @override

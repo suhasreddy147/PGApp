@@ -1,8 +1,8 @@
 
 
 import 'package:flutter/material.dart';
-import 'package:sampleproj/screens/login/login_screen.dart';
-import 'package:sampleproj/screens/signup/signup_screen.dart';
+import 'package:pgapp/screens/login/login_screen.dart';
+import 'package:pgapp/screens/signup/signup_screen.dart';
 
 class LoginandSignup extends StatelessWidget {
   const LoginandSignup({

@@ -1,7 +1,7 @@
 
 import 'package:flutter/material.dart';
 
-import 'package:sampleproj/screens/signin/signin_screen.dart';
+import 'package:pgapp/screens/signin/signin_screen.dart';
 
 
 

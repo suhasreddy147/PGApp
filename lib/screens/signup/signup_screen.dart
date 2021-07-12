@@ -1,8 +1,8 @@
 
 import 'package:flutter/material.dart';
-import 'package:sampleproj/screens/signup/widget/signup_button.dart';
-import 'package:sampleproj/screens/signup/widget/signup_form.dart';
-import 'package:sampleproj/screens/signup/widget/welcome.dart';
+import 'package:pgapp/screens/signup/widget/signup_button.dart';
+import 'package:pgapp/screens/signup/widget/signup_form.dart';
+import 'package:pgapp/screens/signup/widget/welcome.dart';
 
 class SignUpScreen extends StatelessWidget {
   @override

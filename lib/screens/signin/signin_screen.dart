@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:sampleproj/screens/signin/widget/login_and_signup.dart';
-import 'package:sampleproj/screens/signin/widget/signin_with_google.dart';
+import 'package:pgapp/screens/signin/widget/login_and_signup.dart';
+import 'package:pgapp/screens/signin/widget/signin_with_google.dart';
 
-import 'package:sampleproj/screens/signin/widget/slider_dot.dart';
+import 'package:pgapp/screens/signin/widget/slider_dot.dart';
 
 //import 'package:flutter_svg/flutter_svg.dart';
 

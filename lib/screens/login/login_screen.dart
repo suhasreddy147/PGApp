@@ -1,9 +1,9 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:sampleproj/screens/login/widget/login_button.dart';
-import 'package:sampleproj/screens/login/widget/login_form.dart';
-import 'package:sampleproj/screens/login/widget/welcome_back.dart';
-import 'package:sampleproj/screens/reset_password/reset_screen.dart';
+import 'package:pgapp/screens/login/widget/login_button.dart';
+import 'package:pgapp/screens/login/widget/login_form.dart';
+import 'package:pgapp/screens/login/widget/welcome_back.dart';
+import 'package:pgapp/screens/reset_password/reset_screen.dart';
 
 class LoginScreen extends StatelessWidget {
   @override

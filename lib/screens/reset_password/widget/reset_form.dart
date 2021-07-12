@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:sampleproj/screens/login/widget/input_text_field.dart';
+import 'package:pgapp/screens/login/widget/input_text_field.dart';
 
 class ResetForm extends StatelessWidget {
   const ResetForm({
