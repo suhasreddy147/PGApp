@@ -50,6 +50,8 @@ class Authentication {
         print('signInWithGoogle succeeded: $user');
 
         return "";
+      } else {
+        return "User returned Null. Contact Admin!";
       }
     } on FirebaseAuthException catch (e) {
       return e.message;
