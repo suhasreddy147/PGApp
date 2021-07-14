@@ -20,18 +20,16 @@ class SignInWithGoogle extends StatelessWidget {
           ),
           onPressed: () async {
             String check = await Authentication().signInWithGoogle();
-            if (check.length == 0)
-            {
-              ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-                  content: Text("Account Created! You can now LogIn")));
-              Navigator.push(context,MaterialPageRoute(
-                builder: (context){
-                  return  LoginScreen(); //not going to login screen
-                }
-              ),
+            if (check.length == 0) {
+              ScaffoldMessenger.of(context).showSnackBar(
+                  SnackBar(content: Text("Account Linked With Google!")));
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) {
+                  return Dashboard(); //not going to login screen
+                }),
               );
-            }
-            else
+            } else
               ScaffoldMessenger.of(context)
                   .showSnackBar(SnackBar(content: Text("$check")));
           },
