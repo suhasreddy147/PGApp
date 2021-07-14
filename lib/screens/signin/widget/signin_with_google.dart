@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:pgapp/backend/authentication.dart';
+import 'package:pgapp/screens/dashboard.dart';
+import 'package:pgapp/screens/login/login_screen.dart';
 
 class SignInWithGoogle extends StatelessWidget {
   const SignInWithGoogle({
@@ -19,8 +21,16 @@ class SignInWithGoogle extends StatelessWidget {
           onPressed: () async {
             String check = await Authentication().signInWithGoogle();
             if (check.length == 0)
+            {
               ScaffoldMessenger.of(context).showSnackBar(SnackBar(
                   content: Text("Account Created! You can now LogIn")));
+              Navigator.push(context,MaterialPageRoute(
+                builder: (context){
+                  return  LoginScreen(); //not going to login screen
+                }
+              ),
+              );
+            }
             else
               ScaffoldMessenger.of(context)
                   .showSnackBar(SnackBar(content: Text("$check")));

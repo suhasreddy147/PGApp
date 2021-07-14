@@ -1,6 +1,7 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:pgapp/backend/authentication.dart';
+import 'package:pgapp/screens/dashboard.dart';
 import 'package:pgapp/screens/login/widget/input_text_field.dart';
 import 'package:pgapp/screens/login/widget/welcome_back.dart';
 import 'package:pgapp/screens/reset_password/reset_screen.dart';
@@ -91,8 +92,16 @@ class _LoginScreenState extends State<LoginScreen> {
                 String check = await Authentication()
                     .signInUser(email: _email, password: _password);
                 if (check.length == 0)
+                {
                   ScaffoldMessenger.of(context)
-                      .showSnackBar(SnackBar(content: Text("LoggedIn!")));
+                      .showSnackBar(SnackBar(content: Text("Logged In!")));
+                Navigator.push(context,MaterialPageRoute(
+                builder: (context){
+                  return Dashboard();
+                  }
+                  ),
+                  );
+                }
                 else
                   ScaffoldMessenger.of(context)
                       .showSnackBar(SnackBar(content: Text("$check")));

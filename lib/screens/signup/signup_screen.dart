@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:pgapp/backend/authentication.dart';
+import 'package:pgapp/screens/login/login_screen.dart';
 import 'package:pgapp/screens/login/widget/input_text_field.dart';
 import 'package:pgapp/screens/signup/widget/welcome.dart';
 
@@ -62,8 +63,16 @@ class _SignUpScreenState extends State<SignUpScreen> {
                 String check = await Authentication()
                     .signUpUser(email: _email, password: _password);
                 if (check.length == 0)
+                {
                   ScaffoldMessenger.of(context).showSnackBar(SnackBar(
                       content: Text("Account Created! You can now LogIn")));
+                  Navigator.push(context,MaterialPageRoute(
+                builder: (context){
+                  return LoginScreen();
+                  }
+                  ),
+                  );
+                }
                 else
                   ScaffoldMessenger.of(context)
                       .showSnackBar(SnackBar(content: Text("$check")));
@@ -76,7 +85,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                   'Sign up',
                   style: TextStyle(
                     color: Colors.blue,
-                  ), //HAVE TO ADD ONPRESS FUNCTION TO STORE DATA AND CHECK IF USER ALREADY EXISTS
+                  ), 
                 ),
               ),
             ),
