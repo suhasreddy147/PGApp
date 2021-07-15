@@ -48,15 +48,6 @@ class ResetPassword extends StatelessWidget {
         fontWeight: FontWeight.bold, 
       ),
       ),
-      leading: IconButton(
-        icon: Icon(
-          Icons.arrow_back_ios,
-          color: Colors.blue,
-        ),
-        onPressed: () {
-          Navigator.pop(context);
-        },
-      ),
     );
   }
 }

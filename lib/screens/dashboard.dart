@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:pgapp/screens/account_page.dart';
 import 'package:pgapp/screens/home_screen.dart';
 import 'package:pgapp/screens/more_options.dart';
-import 'package:pgapp/screens/settings_drawer.dart';
 
 
 class Dashboard extends StatefulWidget {
@@ -26,11 +25,21 @@ class _DashboardState extends State<Dashboard>{
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       backgroundColor: Colors.blueAccent[100],
       appBar: AppBar(
-          title: Text('Dashboard'), //change to account name
+          title: Text('Sri Vari PG'),
+        leading: IconButton(
+        icon: Icon(
+          Icons.power_settings_new,
+          color: Colors.white,
+        ),
+        onPressed: () {
+          Navigator.pop(context); // add logout alert
+        },
+      ), //change to account name
           ),
-          drawer: SettingsDrawer(),
+        
       body: Center(
         child: _widgetOptions.elementAt(selectedindex),
       ),

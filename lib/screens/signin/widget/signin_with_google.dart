@@ -26,7 +26,7 @@ class SignInWithGoogle extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) {
-                  return Dashboard(); //not going to login screen
+                  return Dashboard(); 
                 }),
               );
             } else
