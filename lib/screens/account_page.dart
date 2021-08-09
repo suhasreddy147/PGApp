@@ -1,9 +1,9 @@
-
-
+import 'package:pgapp/backend/authentication.dart';
 import 'package:flutter/material.dart';
+import 'package:pgapp/screens/reset_password/reset_screen.dart';
 
 class Account extends StatelessWidget {
-  
+  Authentication auth = new Authentication();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -50,7 +50,7 @@ class Account extends StatelessWidget {
                 style: TextStyle(color: Colors.blueGrey[800]),
                 children: [
                   TextSpan(
-                    text: 'accountname01@gmail.com',
+                    text: auth.getUserEmail(),
                     style: TextStyle(
                       color: Colors.blueGrey[800],
                       fontSize: 20.0,
@@ -71,7 +71,7 @@ class Account extends StatelessWidget {
                 color:Colors.blueGrey[800],),
             ),
             onPressed: (){
-              //change password
+              Navigator.of(context).push(MaterialPageRoute(builder: (context) => ResetPassword()));
             }
           ),
           ),

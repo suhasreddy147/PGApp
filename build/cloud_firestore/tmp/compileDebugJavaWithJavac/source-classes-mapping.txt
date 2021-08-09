@@ -15,8 +15,6 @@ io/flutter/plugins/firebase/firestore/streamhandler/LoadBundleStreamHandler.java
  io.flutter.plugins.firebase.firestore.streamhandler.LoadBundleStreamHandler
 io/flutter/plugins/firebase/firestore/streamhandler/QuerySnapshotsStreamHandler.java
  io.flutter.plugins.firebase.firestore.streamhandler.QuerySnapshotsStreamHandler
-io/flutter/plugins/firebase/firestore/Constants.java
- io.flutter.plugins.firebase.firestore.Constants
 io/flutter/plugins/firebase/firestore/streamhandler/SnapshotsInSyncStreamHandler.java
  io.flutter.plugins.firebase.firestore.streamhandler.SnapshotsInSyncStreamHandler
 io/flutter/plugins/firebase/firestore/FlutterFirebaseFirestoreException.java

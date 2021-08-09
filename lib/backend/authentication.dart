@@ -5,6 +5,7 @@ import 'package:google_sign_in/google_sign_in.dart';
 class Authentication {
   final FirebaseAuth _auth = FirebaseAuth.instance;
   final GoogleSignIn googleSignIn = GoogleSignIn();
+  String userEmail;
 
   Future<String> checkUserSignedIn() async {
     try {
@@ -92,5 +93,10 @@ class Authentication {
   Future<void> signOutGoogle() async {
     await googleSignIn.signOut();
     print("User Signed Out");
+  }
+  String getUserEmail(){
+    final User user= _auth.currentUser;
+    userEmail=user.email;
+    return userEmail;
   }
 }

@@ -1,5 +1,5 @@
 
-
+import 'package:pgapp/screens/menu.dart';
 import 'package:flutter/material.dart';
 
 class MoreOptions extends StatelessWidget {
@@ -94,6 +94,28 @@ class MoreOptions extends StatelessWidget {
                 fontSize: 20.0,
                 color:Colors.blueGrey[800],),
             ),
+            ),
+          ),
+          Container(
+            padding: const EdgeInsets.only(top:40),
+            alignment: Alignment.center,
+            child:
+            TextButton(
+              onPressed: (){
+                //display menu
+                Navigator.of(context).push(
+                  MaterialPageRoute(builder: (context) => Menu()),
+                );
+              },
+              child: Text("View Menu",),
+              style: TextButton.styleFrom(
+                primary: Colors.blue[900],
+                backgroundColor: Colors.lightBlue[200],
+                minimumSize: Size(300.0,60.0),
+                textStyle: TextStyle(
+                  fontSize: 20.0,
+                  color:Colors.blueGrey[800],),
+              ),
             ),
           ),
         ],
